@@ -1,5 +1,5 @@
 <!doctype html>
-<html land="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -23,13 +23,13 @@
       <h2 class="slogan">we make awesome music</h2>
     </header> 
 
-    <main>
+    <div class="main" role="main">
       <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="Photo of live concert">
-          <div class="container">
-            <form id="survey" class = "survey" action="" method="post">
+          <div class="container" role="form">
+            <form id="survey" class = "survey" method="post">
               <p><strong>Who is your favorite band member:</strong></p>
               <fieldset>
                 <legend>Band Members</legend>
@@ -74,8 +74,8 @@
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="Photo of band performing live">
-            <div class="container">
-              <form id="newsletter" class="newsletter" action="" method="post">
+            <div class="container" role="form">
+              <form id="newsletter" class="newsletter" method="post">
               <fieldset>
                 <legend>Please enter your personal information</legend>
                   <label for="firstName">First Name:</label>
@@ -87,15 +87,17 @@
                   <label for="reEmail">Retype Email:</label>
                   <input id="reEmail" type ="email" name="reEmail"><br>
 
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" aria-describedby="hint">Sign Up</button>
+
+                  <div id="hint">*Submitting the survey puts you on our regular mailing list where you can receive the latest news about Accessible Frog!</div>
                 </fieldset>
               </form>
             </div>
         </div>
       </div>
-    </main>
+    </div>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter logo"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="YouTube logo"></a></li>

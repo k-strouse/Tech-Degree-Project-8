@@ -24,6 +24,13 @@ input:focus {
   background: pink;
 }
 
+#hint {
+  font-style: italic;
+  font-size: .75em;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
   .photo{
