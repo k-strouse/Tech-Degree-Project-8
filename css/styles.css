@@ -8,31 +8,32 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #eff5f3;
-  background: #a5a1aa;
+  color: #black;
+  background: #e6e6e6;
 }
 
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #f05;
+  color: #ccc;
 }
 
 a:hover {
-  color: #eff5f3;;
+  color: #f05;
 }
 
 .buy {
   font-weight: bold;
-  border: 3px solid #f05;
+  border: 3px solid black;
+  color: black;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: rgba(45, 43, 48, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -156,11 +157,13 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: #e6e6e6;
 }
 
 footer ul {
